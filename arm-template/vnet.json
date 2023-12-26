@@ -1,12 +1,23 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vnetName": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "subnetName": {
+            "type": "string"
+        }
+    },
     "resources": [
         {
             "type": "Microsoft.Network/virtualnetworks",
             "apiVersion": "2023-04-01",
-            "name": "vnet-1",
-            "location":  "UK South",
+            "name": "[parameters('vnetName')]",
+            "location":  "[parameters('location')]",
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
@@ -15,7 +26,7 @@
                 },
                 "subnets": [
                     {
-                        "name": "subnet1",
+                        "name": "[parameters('subnetName')]",
                         "properties": {
                             "addressPrefix": "10.0.0.0/24"
                         }
