@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vnetName":{
-            "value": "#{{ vnetName }}"
+            "value": "vnet-1"
         },
         "location":{
-            "value": "#{{ vnetlocation }}"
+            "value": "UK South"
         },
         "subnetName":{
-            "value": "#{{ subnetName }}"
+            "value": "subnet-1"
         }
     }
 }
