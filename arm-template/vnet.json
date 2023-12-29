@@ -12,6 +12,7 @@
             "type": "string"
         }
     },
+    "variables": {},
     "resources": [
         {
             "type": "Microsoft.Network/virtualnetworks",
