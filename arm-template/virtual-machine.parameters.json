@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "vm-1" 
+        },
+        "vmLocation": {
+            "value": "UK South" 
+        },
+        "computerName": {
+            "value": "vm-123" 
+        },
+        "adminUserName": {
+            "value": "Shardindu" 
+        },
+        "adminPassword": {
+            "value": "sh@rDindu_05" 
+        },
+        "publisher": {
+            "value": "Shardindu" 
+        },
+        "offer": {
+            "value": "Windows-10" 
+        },
+        "sku": {
+            "value": "20h2-pro" 
+        },
+        "version": {
+            "value": "latest" 
+        },
+        "nicName": {
+            "value": "NIC-1" 
+        },
+        "nicLocation": {
+            "value": "UK South" 
+        },
+        "ipCongigName": {
+            "value": "ipConfig" 
+        },
+        "vnetName": {
+            "value": "vnet-2" 
+        },
+        "vnetLocation": {
+            "value": "UK South" 
+        },
+        "subnetName": {
+            "value": "subnet-2"
+        }
+    }
+}
