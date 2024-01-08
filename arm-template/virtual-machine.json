@@ -92,7 +92,9 @@
             "apiVersion": "2023-04-01",
             "name": "[parameters('nicName')]",
             "location": "[parameters('nicLocation')]",
-            "dependsOn": [],
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"
+            ],
             "properties": {
                 "ipConfigurations": [
                     {
