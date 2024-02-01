@@ -1,0 +1,5 @@
+resource_group_name = "vnet-rg"
+vnet_name = "vnet-1"
+subnet_name = "subnet-1"
+location = "UK South"
+address_prefix = "10.0.0.0/16"
